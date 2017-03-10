@@ -1,0 +1,22 @@
+{
+  "name": "phstockbot",
+  "version": "1.0.0",
+  "description": "A Slack bot that displays stock information from the Philippine Stock Exchange.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jackeblagare/phstockbot.git"
+  },
+  "author": "Jack Elendil B. Lagare",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/jackeblagare/phstockbot/issues"
+  },
+  "homepage": "https://github.com/jackeblagare/phstockbot#readme",
+  "dependencies": {
+    "@slack/client": "^3.8.1"
+  }
+}
