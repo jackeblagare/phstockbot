@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/jackeblagare/phstockbot#readme",
   "dependencies": {
-    "@slack/client": "^3.8.1"
+    "@slack/client": "^3.8.1",
+    "botkit": "^0.5.1",
+    "request": "^2.81.0"
   }
 }
