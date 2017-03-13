@@ -21,7 +21,6 @@ controller.hears('STOCK_INFO',['direct_message','direct_mention','mention'],func
         if (!error && response.statusCode == 200) {
             var response = JSON.parse(body);
 
-            //for(var i=0;i<)
             var stockSymbol = response.stock[0].symbol;
             var stockName = response.stock[0].name;
             var stockPrice = response.stock[0].price.amount;
@@ -29,7 +28,7 @@ controller.hears('STOCK_INFO',['direct_message','direct_mention','mention'],func
             var stockVolume = response.stock[0].volume;
             var lastUpdated = response.as_of;
 
-            var stockMessage = 'Here is the information you requested: \n\n\n' 
+            var stockMessage = 'Here is the information you requested: \n\n' 
                 + stockName+' ('+stockSymbol+') \n'+'Price: ' + stockPrice
                 + '\n' + 'Volume: ' + stockVolume + '\n%Change: ' + stockPercentChange
                 + '\nLast Updated: ' + lastUpdated;
@@ -38,8 +37,4 @@ controller.hears('STOCK_INFO',['direct_message','direct_mention','mention'],func
         }
     })
     
-});
-
-controller.hears('hello',['direct_message','direct_mention','mention'],function(bot,message) {
-  bot.reply(message,'Hello yourself.');
 });
